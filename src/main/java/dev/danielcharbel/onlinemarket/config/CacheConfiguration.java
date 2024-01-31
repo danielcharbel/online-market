@@ -48,6 +48,14 @@ public class CacheConfiguration {
             createCache(cm, dev.danielcharbel.onlinemarket.domain.User.class.getName());
             createCache(cm, dev.danielcharbel.onlinemarket.domain.Authority.class.getName());
             createCache(cm, dev.danielcharbel.onlinemarket.domain.User.class.getName() + ".authorities");
+            createCache(cm, dev.danielcharbel.onlinemarket.domain.Product.class.getName());
+            createCache(cm, dev.danielcharbel.onlinemarket.domain.ProductCategory.class.getName());
+            createCache(cm, dev.danielcharbel.onlinemarket.domain.ProductCategory.class.getName() + ".products");
+            createCache(cm, dev.danielcharbel.onlinemarket.domain.CustomerDetails.class.getName());
+            createCache(cm, dev.danielcharbel.onlinemarket.domain.CustomerDetails.class.getName() + ".carts");
+            createCache(cm, dev.danielcharbel.onlinemarket.domain.ShoppingCart.class.getName());
+            createCache(cm, dev.danielcharbel.onlinemarket.domain.ShoppingCart.class.getName() + ".orders");
+            createCache(cm, dev.danielcharbel.onlinemarket.domain.ProductOrder.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
